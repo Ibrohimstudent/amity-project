@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import {Link,Outlet} from "react-router-dom";
 import logo  from "../assets/black 1.svg"
 import {
-    MenuFoldOutlined,
-    MenuUnfoldOutlined,
+    CaretLeftOutlined,
+    CaretRightOutlined,
     UploadOutlined,
     UserOutlined,
     VideoCameraOutlined,
@@ -17,7 +17,9 @@ const Kabinet = () => {
     } = theme.useToken();
     return (
         <Layout style={{width:"100%",height:"100vh"}}>
-            <Sider trigger={null} collapsible collapsed={collapsed} style={{backgroundColor:"white"}}>
+            <Sider trigger={null}
+
+                   collapsible collapsed={collapsed} style={{backgroundColor:"white"}}>
                 <img src={logo} alt=""/>
                 <Menu
                     theme="light"
@@ -32,6 +34,7 @@ const Kabinet = () => {
                     <Menu.Item><Link to={"/kabinet/kontaktlar"}>Kontaktlar</Link></Menu.Item>
                 </Menu>
 
+
             </Sider>
             <Layout style={{backgroundColor:"#f8f8f8"}}>
 
@@ -45,14 +48,20 @@ const Kabinet = () => {
                 >
                     <Button
                         type="text"
-                        icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+                        icon={collapsed ? <CaretRightOutlined/> : <CaretLeftOutlined/>}
                         onClick={() => setCollapsed(!collapsed)}
                         style={{
                             fontSize: '16px',
                             width: 64,
                             height: 64,
+                            border:"1px solid transparent",
+                            borderRadius:"50%",
+                            margin:" 450px -30px ",
+                            backgroundColor:"lightgray"
+
                         }}
                     />
+
                     <Outlet/>
                 </Content>
             </Layout>
