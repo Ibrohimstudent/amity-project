@@ -1,26 +1,31 @@
 import React from 'react';
+import {Route, Routes} from "react-router-dom";
 import Kabinet from "./components/Kabinet";
-import Course from "./components/Pages/course";
-import Advertisement from "./components/Pages/advertisement";
-import {Routes,Route} from "react-router-dom";
-import Webinar from "./components/Pages/webinar";
-import Team from "./components/Pages/team";
 import Category from "./components/Pages/category";
-import Contact from "./components/Pages/contact";
+import Xodimlar from "./components/Pages/xodimlar";
+import Kontaktlar from "./components/Pages/kontaktlar";
+import Vebinar from "./components/Pages/vebinar";
+import Elonlar from "./components/Pages/elonlar";
+import Kurslar from "./components/Pages/kurslar";
+
+
 
 function App(props) {
     return (
         <div>
             <Routes>
                 <Route path={"/"} element={<Kabinet/>}>
-                    <Route path={"/kabinet/kurslar"} element={<Course/>}/>
-                    <Route path={"/kabinet/elonlar"} element={<Advertisement/>}/>
-                    <Route path={"/kabinet/vebinar"} element={<Webinar/>}/>
-                    <Route path={"/kabinet/hodimlar"} element={<Team/>}/>
+                    <Route path={"/kabinet/kurslar"} element={<Kurslar/>}/>
+                    <Route path={"/kabinet/elonlar"} element={<Elonlar/>}/>
+                    <Route path={"/kabinet/vebinar"} element={<Vebinar/>}/>
+                    <Route path={"/kabinet/xodimlar"} element={<Xodimlar/>}/>
                     <Route path={"/kabinet/category"} element={<Category/>}/>
-                    <Route path={"/kabinet/kontaktlar"} element={<Contact/>}/>
+                    <Route path={"/kabinet/kontaktlar"} element={<Kontaktlar/>}/>
                 </Route>
+
             </Routes>
+
+
 
 
         </div>
