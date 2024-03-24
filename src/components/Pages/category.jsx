@@ -62,7 +62,6 @@ function Category(props) {
         message.error('No Deleted');
     };
 
-        // columns.filter((item,index)=>item.name.toLowerCase().includes(value.toLowerCase()))
 
 
     return (
