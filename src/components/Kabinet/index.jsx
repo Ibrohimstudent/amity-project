@@ -20,7 +20,7 @@ const Kabinet = () => {
             <Sider trigger={null}
 
                    collapsible collapsed={collapsed} style={{backgroundColor:"white"}}>
-                <img className={"p-2"} src={logo} alt=""/>
+                <img className={"p-2 mx-3"} src={logo} alt=""/>
                 <Menu
                     theme={"light"}
                     mode="inline"
@@ -28,6 +28,11 @@ const Kabinet = () => {
                     onClick={(e)=>navigate(e.key)}
                     style={{fontSize:"14px",fontWeight:"500"}}
                     items={[
+                        {
+                            key:"/kabinet",
+                            icon: <i style={{fontSize:"20px"}} className="bi bi-bar-chart-fill"></i>,
+                            label:"Dashboard"
+                        },
                         {
                             key:"/kabinet/kurslar",
                             icon: <i style={{fontSize:"20px"}} className="bi bi-stack"></i>,
@@ -63,8 +68,18 @@ const Kabinet = () => {
 
                             label:"Kontaktlar"
                         },
+                        {
+                            key:"/login",
+                            icon: <i style={{fontSize:"20px"}} className="bi bi-box-arrow-left"></i>,
+
+                            label:<p style={{lineHeight:"1px",marginTop:"10px"}}><p style={{fontSize:"10px"}}>Ibrohim Khudoyberdiyev</p>
+                                <p style={{fontSize:"8px",color:"gray"}}> ibrohimxudoyberdiyev@gmail.com</p> </p>
+
+
+                        },
                     ]}
                 >
+
 
 
 
@@ -90,8 +105,8 @@ const Kabinet = () => {
                         onClick={() => setCollapsed(!collapsed)}
                         style={{
                             fontSize: '20px',
-                            width: 64,
-                            height: 64,
+                            width: 54,
+                            height: 54,
                             borderRadius:"50%",
                             margin:" 450px 0px 0px -30px  ",
                             backgroundColor:"lightgray",

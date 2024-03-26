@@ -1,7 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Button, Modal, Form, Input} from 'antd';
 import {useDispatch, useSelector} from "react-redux";
-import TextArea from "antd/es/input/TextArea";
+
+
+
+
 
 const App = ({isModalOpen,setIsModalOpen}) => {
     const showModal = () => {
@@ -40,17 +43,19 @@ const App = ({isModalOpen,setIsModalOpen}) => {
     }
     return (
         <>
-            <Modal title="Basic Drawer"   open={isModalOpen}  onCancel={handleCancel}>
+            <Modal className={"position-relative"} title="Add Category"   open={isModalOpen}  onCancel={handleCancel}>
 
-                <Form form={form} onFinish={onFinish} layout={"vertical"}>
-                    <Form.Item initialValue={editData.name} name={"name"} label={"Name"} rules={[{required:true}]}>
+                <Form  form={form} onFinish={onFinish} layout={"vertical"}>
+
+                    <Form.Item initialValue={editData.idx} name={"idx"} label={"ID"} rules={[{required:true}]}>
                         <Input/>
                     </Form.Item>
-                    <Form.Item initialValue={editData.idx} name={"idx"} label={"Id"} rules={[{required:true}]}>
+                    <Form.Item initialValue={editData.name} name={"name"} label={"Category name:"} rules={[{required:true}]}>
                         <Input/>
                     </Form.Item>
-                    <Form.Item  >
-                        <Button htmlType={"submit"} type={"primary"} onClick={handleOk} className={"w-25"}>Ok</Button>
+
+                    <Form.Item className={"   position-absolute "} style={{right:"25px",bottom:"-5px",zIndex:"1"}}  >
+                        <Button htmlType={"submit"} type={"primary"} onClick={handleOk} >Ok</Button>
                     </Form.Item>
                 </Form>
             </Modal>

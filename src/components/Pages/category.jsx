@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import {Table,Divider,Button,Popconfirm,message,Input} from "antd";
+import {Table, Divider, Button, Popconfirm, message, Input, Form} from "antd";
 import Drawer from "./drawerCategory"
 
 function Category(props) {
+    const [search, setSearch] = useState('')
+
     const {category} =useSelector(state => state.CategoryReducer)
     const [open, setOpen] = useState(false);
-    const [value,setValue] = useState("")
 
     const dispatch =useDispatch()
     function editItem(item) {
@@ -15,7 +16,7 @@ function Category(props) {
 
     }
 
-    const columns = [
+      const columns = [
         {
             title: 'ID',
 
@@ -55,7 +56,7 @@ function Category(props) {
     const confirm = (e) => {
         console.log(e);
         message.success('Deleted');
-        dispatch({type:"DELETE_USER",payload:e.id})
+        dispatch({type:"DELETE_CATEGORY",payload:e.id})
     };
     const cancel = (e) => {
         console.log(e);
@@ -65,12 +66,9 @@ function Category(props) {
 
 
     return (
-        <div className={'container position-relative my-4'}>
-            <Input value={value} onChange={(e)=>setValue(e.target.value)}  style={{fontSize: "14px", fontWeight: "400",position:"absolute",width:"300px",height:"30px"}} placeholder={"Search..."}
-                    prefix={<i className={"bi bi-search"}></i>}>
-                </Input>
-            {value}
+        <div style={{width:"95%"}} className={'container  position-relative my-4'}>
 
+           
 
 
             <Drawer  isModalOpen={open} setIsModalOpen={setOpen}/>
@@ -86,9 +84,11 @@ function Category(props) {
 
             <Table
 
+
                 columns={columns}
                 dataSource={category}
             >
+
 
             </Table>
         </div>

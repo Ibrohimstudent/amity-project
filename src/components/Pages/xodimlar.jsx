@@ -67,7 +67,7 @@ function Xodimlar(props) {
     };
 
     return (
-        <div className={'container position-relative my-4'}>
+        <div style={{width:"95%"}} className={'container position-relative my-4'}>
             <h2 style={{fontSize: "30px", fontWeight: "400",position:"absolute"}}>Hodimlar ro'yxati</h2>
 
 
