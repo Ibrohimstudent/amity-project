@@ -31,28 +31,28 @@ const App = ({open,setOpen}) => {
                         <input type={"file"}  placeholder={"Choose file"}/>
                     </Form.Item>
 
-                        <Form.Item   valuePropName="fileList" getValueFromEvent={normFile} rules={[{required:true}]}>
-                            <Upload style={{height:"40px"}} action="/upload.do" listType="picture-card">
-                                <button
-                                    style={{
-                                        border: 0,
-                                        background: 'none',
-                                        height:"40px"
+                    <Form.Item   valuePropName="fileList" getValueFromEvent={normFile} rules={[{required:true}]}>
+                        <Upload style={{height:"40px"}} action="/upload.do" listType="picture-card">
+                            <button
+                                style={{
+                                    border: 0,
+                                    background: 'none',
+                                    height:"40px"
 
+                                }}
+                                type="button"
+                            >
+                                <PlusOutlined />
+                                <div
+                                    style={{
+                                        marginTop: "20px",
                                     }}
-                                    type="button"
                                 >
-                                    <PlusOutlined />
-                                    <div
-                                        style={{
-                                            marginTop: "20px",
-                                        }}
-                                    >
-                                        Upload Image
-                                    </div>
-                                </button>
-                            </Upload>
-                        </Form.Item>
+                                    Upload Image
+                                </div>
+                            </button>
+                        </Upload>
+                    </Form.Item>
                     <Form.Item   rules={[{required:true}]}>
 
                         <Input
@@ -70,8 +70,8 @@ const App = ({open,setOpen}) => {
                         <button
                             style={{backgroundColor:"#FEC200",padding:"0 10px",
                                 color:"white",fontWeight:"400",borderRadius:"5px",
-                            border:"1px solid transparent"}}
-                                htmlType={"submit"}  className={"  float-end"}>Saqlash</button>
+                                border:"1px solid transparent"}}
+                            htmlType={"submit"}  className={"  float-end"}>Saqlash</button>
                     </Form.Item>
 
 

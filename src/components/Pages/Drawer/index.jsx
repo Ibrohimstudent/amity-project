@@ -1,7 +1,6 @@
 import React from 'react';
 import {Button, Drawer, Form, Input} from 'antd';
 import {useDispatch, useSelector} from "react-redux";
-import TextArea from "antd/es/input/TextArea";
 
 const App = ({open,setOpen}) => {
 
@@ -44,7 +43,7 @@ const App = ({open,setOpen}) => {
 
                         <Input
                             prefix={<h5 className={"bi bi-person-circle"}>:</h5>}
-                             type={"text"} placeholder={"F.I.Sh..."}/>
+                            type={"text"} placeholder={"F.I.Sh..."}/>
                     </Form.Item>
                     <Form.Item initialValue={editData.email} name={"email"}  rules={[{required:true}]}>
 
@@ -62,7 +61,7 @@ const App = ({open,setOpen}) => {
 
                     <Form.Item  >
                         <button style={{backgroundColor:"#FEC200",padding:"7px 20px",fontSize:"17px",color:"black",fontWeight:"500",
-                        border:"1px solid transparent"}}
+                            border:"1px solid transparent"}}
                                 htmlType={"submit"}  className={"  float-end"}>Saqlash</button>
                     </Form.Item>
 

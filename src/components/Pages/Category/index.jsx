@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import {Table, Divider, Button, Popconfirm, message, Input, Form} from "antd";
-import Drawer from "./drawerCategory"
+import Drawer from "../DrawerCategory"
 
 function Category(props) {
     const [search, setSearch] = useState('')

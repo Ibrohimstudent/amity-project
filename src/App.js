@@ -1,13 +1,13 @@
 import React from 'react';
 import {Route, Routes, useLocation} from "react-router-dom";
-import Kabinet from "./components/Kabinet";
-import Category from "./components/Pages/category";
-import Xodimlar from "./components/Pages/xodimlar";
-import Kontaktlar from "./components/Pages/kontaktlar";
-import Vebinar from "./components/Pages/vebinar";
-import Elonlar from "./components/Pages/elonlar";
-import Kurslar from "./components/Pages/kurslar";
-import Login from "./components/Pages/login";
+import Kabinet from "./components/Kabinet/index";
+import Category from "./components/Pages/Category/index";
+import Xodimlar from "./components/Pages/Xodimlar/index";
+import Kontaktlar from "./components/Pages/Kontaktlar/index";
+import Vebinar from "./components/Pages/Vebinar/index";
+import Elonlar from "./components/Pages/Elonlar/index";
+import Kurslar from "./components/Pages/Kurslar/index";
+import Login from "./components/Pages/Login/index"
 
 
 

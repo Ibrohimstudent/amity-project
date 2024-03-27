@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import {Table,Divider,Button,Popconfirm,message} from "antd";
-import Drawer from "./drawer"
+import {Table,Divider,Popconfirm,message} from "antd";
+import Drawer from "../Drawer";
 
 function Xodimlar(props) {
     const {xodimlar} =useSelector(state => state.XodimlarReducer)
@@ -78,7 +78,7 @@ function Xodimlar(props) {
                 backgroundColor: "#FEC200", width: "150px", fontWeight: "600", fontSize: "20px", borderRadius: "5px",
                 border: "1px solid transparent", marginBottom: "20px"
             }} onClick={() => setOpen(prevState => !prevState)}
-                    className={"float-end "}>+ Qo'shish
+                     className={"float-end "}>+ Qo'shish
             </button>
 
 
