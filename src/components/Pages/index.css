@@ -1,0 +1,103 @@
+.containerr{
+    width: 100%;
+    height: 100vh;
+    background-color: #F5F5F5;
+}
+
+.width{
+    width: 900px;
+    height: 200px;
+}
+.cardd{
+    width: 300px;
+}
+.text{
+    gap: 950px;
+}
+.navbarr{
+    width: 100%;
+    padding: 0 20px;
+}
+.navbarr button{
+    color: white;
+}
+
+.kurs{
+    padding: 20px;
+}
+
+.k{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.box{
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.cardd{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 5px 5px 5px rgba(211, 211, 211, 0.55);
+    border: none;
+}
+
+.f{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.379);
+}
+
+.b{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.377);
+}
+.b img{
+    width: 100%;
+}
+
+.ff{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ff button{
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.yellow{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FBC000;
+    color: #fff;
+    font-size: 18px;
+}
+
+.ff button:nth-child(1){
+    color: blue;
+}
+
+.ff button:nth-child(2){
+    color: red;
+}
+
+.k input{
+    height: 35px;
+}
+
+.two{
+    display: flex;
+    gap: 50px;
+    text-align: end;
+    width: 700px;
+    transform: translateX(300px);
+}

@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import { BsPencilFill } from "react-icons/bs";
 import { BsTrash3Fill } from "react-icons/bs";
+import "../main.css"
+
 
 
 

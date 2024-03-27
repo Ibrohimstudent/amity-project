@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Drawer from "../DrawerElonlar";
+import "../main.css"
 import { Divider} from "antd";
 import img1 from "../../assets/mountains green forest and river landscape sunny.jpg"
 
