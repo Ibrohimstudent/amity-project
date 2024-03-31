@@ -23,6 +23,7 @@
 }
 
 .kurs{
+    height: 100%;
     padding: 20px;
 }
 
@@ -30,6 +31,11 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;
+
+}
+.k h2{
+    font-weight: 400;
+
 }
 
 .box{
@@ -45,6 +51,7 @@
     gap: 30px;
     box-shadow: 5px 5px 5px rgba(211, 211, 211, 0.55);
     border: none;
+    border-radius: 10px;
 }
 
 .f{
@@ -74,12 +81,23 @@
 }
 
 .yellow{
-    padding: 5px 10px;
+    border: none;
+    height: 30px;
+    padding:0  10px ;
+    border-radius: 5px;
+    background-color: #FBC000;
+    color: #fff;
+    font-size: 12px;
+}
+.yellow-2{
+    width: 130px;
+    height: 30px;
+    padding:0  10px ;
     border: none;
     border-radius: 5px;
     background-color: #FBC000;
     color: #fff;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .ff button:nth-child(1){
@@ -96,8 +114,9 @@
 
 .two{
     display: flex;
-    gap: 50px;
+    gap: 40px;
     text-align: end;
     width: 700px;
+    height: 40px;
     transform: translateX(300px);
 }

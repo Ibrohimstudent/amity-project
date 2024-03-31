@@ -8,6 +8,7 @@ import Vebinar from "./components/Pages/Vebinar/index";
 import Elonlar from "./components/Pages/Elonlar/index";
 import Kurslar from "./components/Pages/Kurslar/index";
 import Login from "./components/Pages/Login/index"
+import Dashboard from "./components/Pages/Dashboard";
 
 
 
@@ -21,6 +22,7 @@ function App(props) {
                 <Route path={"/login"} element={<Login/>} />
 
                 <Route path={"/kabinet"} element={<Kabinet/>}>
+                    <Route path={"/kabinet"} element={<Dashboard/>}/>
                     <Route path={"/kabinet/kurslar"} element={<Kurslar/>}/>
                     <Route path={"/kabinet/elonlar"} element={<Elonlar/>}/>
                     <Route path={"/kabinet/vebinar"} element={<Vebinar/>}/>

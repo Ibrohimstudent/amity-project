@@ -6,56 +6,66 @@ function Kurslar(props) {
     return (
         <div className='kurs'>
             <div className="k">
-                <h1>Kurs qo'shish</h1>
-                <button className='yellow'>Add Course +</button>
+                <h2>Kurs qo'shish</h2>
+                <button className='yellow  '>+ Add Course </button>
             </div>
 
             <div className="box">
-                <div className="cardd">
+                <div className="cardd bg-white">
                     <div className="f">
-                        <h4>English</h4>
-                        <h4>B2</h4>
+                        <h5>English</h5>
+                        <p>B2</p>
                     </div>
+                    <img src="" alt="no image"/>
                     <div className="b">
-                        <h3>350,000 so'm</h3>
-                        <h3>Category</h3>
+                        <h4 style={{fontWeight: "400"}}>350,000 so'm</h4>
+                        <p>Category</p>
+
+
                     </div>
 
                     <div className="ff">
-                        <button><i className="bi bi-pen"></i></button>
-                        <button><i className="bi bi-trash-fill"></i></button>
+                        <button className={"mx-5"}><i className="bi bi-pen"></i></button>
+                        <button className={"mx-5"}><i className="bi bi-trash-fill"></i></button>
                     </div>
                 </div>
-                <div className="cardd">
+                <div className="cardd bg-white">
                     <div className="f">
-                        <h4>Frontend</h4>
-                        <h4>Web Developer</h4>
+                        <h5>Frontend</h5>
+                        <p>Web Developer</p>
                     </div>
+                    <img src="" alt="no image"/>
                     <div className="b">
-                        <h3>700,000 so'm</h3>
-                        <h3>Category</h3>
+                        <h4 style={{fontWeight: "400"}}>700,000 so'm</h4>
+                        <p>Category</p>
+
+
                     </div>
 
                     <div className="ff">
-                        <button><i className="bi bi-pen"></i></button>
-                        <button><i className="bi bi-trash-fill"></i></button>
+                        <button className={"mx-5"}><i className="bi bi-pen"></i></button>
+                        <button className={"mx-5"}><i className="bi bi-trash-fill"></i></button>
                     </div>
                 </div>
-                <div className="cardd">
+                <div className="cardd bg-white">
                     <div className="f">
-                        <h4>Backend</h4>
-                        <h4>Web Developer</h4>
+                        <h5>Arabic</h5>
+                        <p>B1</p>
                     </div>
+                    <img src="" alt="no image"/>
                     <div className="b">
-                        <h3>800,000 so'm</h3>
-                        <h3>Category</h3>
+                        <h4 style={{fontWeight: "400"}}>250,000 so'm</h4>
+                        <p>Category</p>
+
+
                     </div>
 
                     <div className="ff">
-                        <button><i className="bi bi-pen"></i></button>
-                        <button><i className="bi bi-trash-fill"></i></button>
+                        <button className={"mx-5"}><i className="bi bi-pen"></i></button>
+                        <button className={"mx-5"}><i className="bi bi-trash-fill"></i></button>
                     </div>
                 </div>
+
             </div>
         </div>
     );

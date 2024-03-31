@@ -75,7 +75,8 @@ function Xodimlar(props) {
 
 
             <button  style={{
-                backgroundColor: "#FEC200", width: "150px", fontWeight: "600", fontSize: "20px", borderRadius: "5px",
+                backgroundColor: "#FEC200", width: "150px", fontWeight: "600",
+                fontSize: "16px", borderRadius: "5px",color:"white",
                 border: "1px solid transparent", marginBottom: "20px"
             }} onClick={() => setOpen(prevState => !prevState)}
                      className={"float-end "}>+ Qo'shish

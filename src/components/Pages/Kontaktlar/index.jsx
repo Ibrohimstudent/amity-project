@@ -39,7 +39,7 @@ const Kontaktlar = () => {
                 </Drawer>
             </div>
             <div className="text">
-                <h2 className="mx-4 my-3">Contact List</h2>
+                <h2 className="mx-4 my-3" style={{fontWeight:"400"}}>Contact List</h2>
             </div>
             <table className="table w-75 mx-5 ">
                 <thead>
@@ -59,16 +59,18 @@ const Kontaktlar = () => {
                     <td>	123-456-7890</td>
                     <td>@123 Main St</td>
                     <td>Twitter: https://twitter.com/johndoe</td>
-                    <td><BsPencilFill /></td>
-                    <Popconfirm
-                        title="Delete the task"
-                        description="Are you sure to delete this task?"
-                        onConfirm={confirm}
-                        onCancel={cancel}
-                        okText="Yes"
-                        cancelText="No"
-                    >   <td><BsTrash3Fill /></td>
-                    </Popconfirm>
+                    <td><BsPencilFill />
+                        <Popconfirm className={"mx-3"}
+                            title="Delete the task"
+                            description="Are you sure to delete this task?"
+                            onConfirm={confirm}
+                            onCancel={cancel}
+                            okText="Yes"
+                            cancelText="No"
+                        >   <td><BsTrash3Fill /></td>
+                        </Popconfirm>
+
+                    </td>
 
                 </tr>
                 <tr>
@@ -77,8 +79,8 @@ const Kontaktlar = () => {
                     <td>	987-654-3210</td>
                     <td>@	456 Oak St</td>
                     <td>Twitter: https://twitter.com/janesmith</td>
-                    <td><BsPencilFill /></td>
-                    <Popconfirm
+                    <td><BsPencilFill />
+                    <Popconfirm className={"mx-3"}
                         title="Delete the task"
                         description="Are you sure to delete this task?"
                         onConfirm={confirm}
@@ -87,6 +89,7 @@ const Kontaktlar = () => {
                         cancelText="No"
                     >   <td><BsTrash3Fill /></td>
                     </Popconfirm>
+                    </td>
                 </tr>
 
                 </tbody>

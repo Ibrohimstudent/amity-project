@@ -6,18 +6,18 @@ function Vebinar(props) {
     return (
         <div className='kurs'>
             <div className="k">
-                <h1>Vebinar</h1>
+                <h2>Vebinar</h2>
                 <div className='two'>
                     <input type="text" placeholder='Search Videos' className='form-control w-25'/>
-                    <button className='yellow'>Add Video +</button>
+                    <button className='yellow-2 '>+ Add Video </button>
                 </div>
             </div>
 
             <div className="box x">
-                <div className="cardd">
+                <div className="cardd bg-white">
                     <div className="f">
-                        <h4>Vebinar</h4>
-                        <h4>Tesla</h4>
+                        <h5>Vebinar</h5>
+                        <p>Tesla</p>
                     </div>
                     <div className="b">
                         <img src={vebinar} alt="" />
@@ -28,10 +28,10 @@ function Vebinar(props) {
                         <button><i className="bi bi-trash-fill"></i></button>
                     </div>
                 </div>
-                <div className="cardd">
+                <div className="cardd bg-white">
                     <div className="f">
-                        <h4>Vebinar</h4>
-                        <h4>Amazon</h4>
+                        <h5>boulan</h5>
+                        <p>Amazon</p>
                     </div>
                     <div className="b">
                         <img src={vebinar} alt="" />
@@ -42,10 +42,10 @@ function Vebinar(props) {
                         <button><i className="bi bi-trash-fill"></i></button>
                     </div>
                 </div>
-                <div className="cardd">
+                <div className="cardd bg-white">
                     <div className="f">
-                        <h4>Vebinar</h4>
-                        <h4>Google</h4>
+                        <h5>boulan</h5>
+                        <p>Google</p>
                     </div>
                     <div className="b">
                         <img src={vebinar} alt="" />
@@ -56,6 +56,7 @@ function Vebinar(props) {
                         <button><i className="bi bi-trash-fill"></i></button>
                     </div>
                 </div>
+
             </div>
         </div>
     );
