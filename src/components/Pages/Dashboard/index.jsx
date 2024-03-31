@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from "../../assets/black 1.svg"
 
 function Index(props) {
     return (
