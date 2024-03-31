@@ -22,7 +22,7 @@ function App(props) {
                 <Route path={"/login"} element={<Login/>} />
 
                 <Route path={"/kabinet"} element={<Kabinet/>}>
-                    <Route path={"/kabinet"} element={<Dashboard/>}/>
+                    <Route  path={"/kabinet"} element={<Dashboard/>}/>
                     <Route path={"/kabinet/kurslar"} element={<Kurslar/>}/>
                     <Route path={"/kabinet/elonlar"} element={<Elonlar/>}/>
                     <Route path={"/kabinet/vebinar"} element={<Vebinar/>}/>
