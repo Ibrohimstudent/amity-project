@@ -14,7 +14,7 @@ function Index(props) {
                             title="YouTube video player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-                    <h4>ANGRENDA  ILK MAROTIBA IT O`QUV MARKAZI - IBS school ochilish marosimi ANGREN HOKIMINI MASLAXATLARI</h4>
+                    <h4>ANGRENDA ILK MAROTIBA IT O`QUV MARKAZI - IBS school ochilish marosimi ANGREN HOKIMINI MASLAXATLARI</h4>
                 </div>
                 <div className="col-md-6 my-5 ">
                     <iframe width="100%" height="315" src="https://www.youtube.com/embed/SXibtPzaxhU?si=P_0qlYyHInhwF8vq"
