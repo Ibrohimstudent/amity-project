@@ -1,5 +1,5 @@
-import React from 'react';
-import {Route, Routes, useLocation} from "react-router-dom";
+import React, { useEffect } from 'react';
+import {Route, Routes, useLocation, useNavigate} from "react-router-dom";
 import Kabinet from "./components/Kabinet/index";
 import Category from "./components/Pages/Category/index";
 import Xodimlar from "./components/Pages/Xodimlar/index";
@@ -14,12 +14,19 @@ import Dashboard from "./components/Pages/Dashboard";
 
 function App(props) {
     const location= useLocation()
-    console.log(location)
+    const navigate = useNavigate()
+
+    useEffect(() => {
+        if (["", "/"].includes(location.pathname)) {
+            navigate("/login", {replace: true})
+        }
+    }, [location.pathname])
+
     return (
         <div className={"container-fluid p-1"}>
             {location.pathname !== "/login" }
             <Routes>
-                <Route path={"/"} element={<Login/>} />
+                <Route path={"/login"} element={<Login/>} />
 
                 <Route path={"/kabinet"} element={<Kabinet/>}>
                     <Route  path={"/kabinet"} element={<Dashboard/>}/>

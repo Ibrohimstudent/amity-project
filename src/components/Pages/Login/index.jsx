@@ -88,7 +88,7 @@ function Login(props) {
 
                 >
                     <Button  form={"form"} onClick={checkEmail}  style={{backgroundColor:"#FEC200",color:"white", width:"150px"}} htmlType="submit">
-                        Log In ->
+                        Log In 
                     </Button>
                 </Form.Item>
             </Form>
