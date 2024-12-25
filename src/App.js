@@ -19,7 +19,7 @@ function App(props) {
         <div className={"container-fluid p-1"}>
             {location.pathname !== "/login" }
             <Routes>
-                <Route path={"/login"} element={<Login/>} />
+                <Route path={"/"} element={<Login/>} />
 
                 <Route path={"/kabinet"} element={<Kabinet/>}>
                     <Route  path={"/kabinet"} element={<Dashboard/>}/>
