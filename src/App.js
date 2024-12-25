@@ -16,7 +16,7 @@ function App(props) {
     const location= useLocation()
     console.log(location)
     return (
-        <div className={"container-fluid p-0"}>
+        <div className={"container-fluid p-1"}>
             {location.pathname !== "/login" }
             <Routes>
                 <Route path={"/login"} element={<Login/>} />
