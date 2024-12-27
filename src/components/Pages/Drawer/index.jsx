@@ -33,7 +33,7 @@ const App = ({open,setOpen}) => {
     return (
         <>
 
-            <Drawer title="Hodim qo'shish" onClose={onClose} open={open}>
+            <Drawer title="Add Employee" onClose={onClose} open={open}>
 
                 <Form form={form} onFinish={onFinish} layout={"vertical"}>
                     <Form.Item className={'w-50 '} initialValue={editData.id} name={"id"} rules={[{required:true}]}>
@@ -62,7 +62,7 @@ const App = ({open,setOpen}) => {
                     <Form.Item  >
                         <button style={{backgroundColor:"#FEC200",padding:"7px 20px",fontSize:"17px",color:"black",fontWeight:"500",
                             border:"1px solid transparent"}}
-                                htmlType={"submit"}  className={"  float-end"}>Saqlash</button>
+                                htmlType={"submit"}  className={"  float-end"}>Submit</button>
                     </Form.Item>
 
                 </Form>

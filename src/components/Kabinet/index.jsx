@@ -29,12 +29,10 @@ const Kabinet = () => {
                 >
                     <Menu.Item className={"my-3"}><Link  to={"/kabinet"}><img src={logo} alt=""/></Link></Menu.Item>
                     <Menu.Item><Link className={"text-decoration-none"} to={"/kabinet"}><i style={{fontSize:"20px",marginRight:"18px",marginLeft:"7px"}} className={"bi bi-bar-chart-fill  "}></i>Dashboard</Link></Menu.Item>
-                    <Menu.Item><Link className={"text-decoration-none"} to={"/kabinet/kurslar"}><i style={{fontSize:"20px",marginRight:"18px",marginLeft:"7px"}} className={"bi bi-stack  "}></i>Kurslar</Link></Menu.Item>
-                    <Menu.Item><Link className={"text-decoration-none"} to={"/kabinet/elonlar"}><i style={{fontSize:"20px",marginRight:"18px",marginLeft:"7px"}} className={"bi bi-pen-fill  "}></i>E'lonlar</Link></Menu.Item>
-                    <Menu.Item><Link className={"text-decoration-none"} to={"/kabinet/vebinar"}><i style={{fontSize:"20px",marginRight:"18px",marginLeft:"7px"}} className={"bi bi-mic-fill  "}></i>Vebinar</Link></Menu.Item>
-                    <Menu.Item><Link className={"text-decoration-none"} to={"/kabinet/xodimlar"}> <i style={{fontSize:"20px",marginRight:"18px",marginLeft:"7px"}} className={"bi bi-people-fill  "}></i>Xodimlar</Link></Menu.Item>
+                    <Menu.Item><Link className={"text-decoration-none"} to={"/kabinet/kurslar"}><i style={{fontSize:"20px",marginRight:"18px",marginLeft:"7px"}} className={"bi bi-stack  "}></i>Courses</Link></Menu.Item>
+                    <Menu.Item><Link className={"text-decoration-none"} to={"/kabinet/xodimlar"}> <i style={{fontSize:"20px",marginRight:"18px",marginLeft:"7px"}} className={"bi bi-people-fill  "}></i>Employees</Link></Menu.Item>
                     <Menu.Item><Link className={"text-decoration-none"} to={"/kabinet/category"}><i style={{fontSize:"20px",marginRight:"18px",marginLeft:"7px"}} className={"bi bi-bookmarks-fill  "}></i>Category</Link></Menu.Item>
-                    <Menu.Item><Link className={"text-decoration-none"} to={"/kabinet/kontaktlar"}><i style={{fontSize:"20px",marginRight:"18px",marginLeft:"7px"}} className={"bi bi-telephone   "}></i>Kontaktlar</Link></Menu.Item>
+                    <Menu.Item><Link className={"text-decoration-none"} to={"/kabinet/kontaktlar"}><i style={{fontSize:"20px",marginRight:"18px",marginLeft:"7px"}} className={"bi bi-telephone   "}></i>Contacts</Link></Menu.Item>
                     <Menu.Item style={{marginTop:"200px" }}><Link className="text-decoration-none"
                                                                   to={"/login"}> <i style={{fontSize:"20px",marginRight:"18px"}} className={"bi bi-box-arrow-left"}>
 

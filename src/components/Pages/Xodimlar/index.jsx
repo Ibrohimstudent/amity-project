@@ -34,13 +34,13 @@ function Xodimlar(props) {
             dataIndex: 'password',
         },
         {
-            title: 'Delete',
+            title: 'Actions',
             render: (item)=> <div>
 
 
                 <Popconfirm
                     title="Delete the task"
-                    description="Are you sure to delete this task?"
+                    description="Are you sure to delete this employee?"
                     onConfirm={() => confirm(item)}
                     onCancel={cancel}
                     okText="Yes"
@@ -68,7 +68,7 @@ function Xodimlar(props) {
 
     return (
         <div style={{width:"95%"}} className={'container position-relative my-4'}>
-            <h2 style={{fontSize: "30px", fontWeight: "400",position:"absolute"}}>Hodimlar ro'yxati</h2>
+            <h2 style={{fontSize: "30px", fontWeight: "400",position:"absolute"}}>Employees</h2>
 
 
             <Drawer  open={open} setOpen={setOpen}/>
@@ -79,7 +79,7 @@ function Xodimlar(props) {
                 fontSize: "16px", borderRadius: "5px",color:"white",
                 border: "1px solid transparent", marginBottom: "20px"
             }} onClick={() => setOpen(prevState => !prevState)}
-                     className={"float-end "}>+ Qo'shish
+                     className={"float-end "}> Add
             </button>
 
 
