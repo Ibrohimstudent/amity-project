@@ -5,7 +5,7 @@ function Index(props) {
         <div className={"container m-3 "}>
             <div className="row">
                 <div className="col-md-6">
-                    <h2>Dashboardd</h2>
+                    <h2>Dashboard</h2>
                 </div>
             </div>
             <div className="row">
