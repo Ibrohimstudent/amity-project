@@ -12,7 +12,7 @@ function Kurslar(props) {
 
     const dispatch =useDispatch()
     function editItem(item) {
-        dispatch({type:"EDIT_DATA", payload: item})
+        dispatch({type:"EDIT_COURSEDATA", payload: item})
         setOpen(prevState => !prevState)
 
     }

@@ -28,10 +28,10 @@ function ContactReducer(state={
             })
             state = {...state,contacts: a}
             break
-        case "EDIT_DATA" :
+        case "EDIT_CONTACTDATA" :
             state={...state,editData: action.payload}
             break
-        case "EDIT_SAVE" :
+        case "EDIT_CONTACTSAVE" :
             let b = state.contacts.map(item=>{
                 let data = state.editData
 

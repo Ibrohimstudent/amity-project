@@ -1,12 +1,9 @@
 function KurslarReducer(state={
     kurslar:[
-        {id:1,name:"English", price:"350,000 sum", direction:"Language", category:"General",
-        description:"Starting from Beginner Level"
-        },
-        {id:2,name:"Frontend", price:"700,000 sum", direction:"IT Programming", category:"Developing",
+        {id:1,name:"Frontend", price:"700,000 sum", direction:"IT Programming", category:"Developing",
         description:"Starting from HTML5 and CSS3"
         },
-        {id:3,name:"Backend", price:"800,000 sum", direction:"IT Programming", category:"Developing",
+        {id:2,name:"Backend", price:"800,000 sum", direction:"IT Programming", category:"Developing",
         description:"Starting from Python"
         }
     ],
@@ -29,15 +26,16 @@ function KurslarReducer(state={
         case "DELETE_COURSE" :
             let a = [...state.kurslar]
 
-            a.map((item, index) => {
-                a.splice(index, 1)
-            })
+            a.map((index => {
+                a.splice(index,1);
+            }));
+
             state = {...state, kurslar: a}
             break
-        case "EDIT_DATA" :
+        case "EDIT_COURSEDATA" :
             state = {...state, editData: action.payload}
             break
-        case "EDIT_SAVE" :
+        case "EDIT_COURSESAVE" :
             let b = state.kurslar.map(item => {
                 let data = state.editData
 

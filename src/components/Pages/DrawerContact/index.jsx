@@ -16,7 +16,7 @@ const App = ({open,setOpen}) => {
     };
     function onFinish(value) {
         if (editData.id){
-            dispatch({type:"EDIT_SAVE",payload:value})
+            dispatch({type:"EDIT_CONTACTSAVE",payload:value})
 
         }
 

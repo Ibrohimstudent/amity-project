@@ -11,7 +11,7 @@ function Category(props) {
 
     const dispatch =useDispatch()
     function editItem(item) {
-        dispatch({type:"EDIT_DATA", payload: item})
+        dispatch({type:"EDIT_C_DATA", payload: item})
         setOpen(prevState => !prevState)
 
     }

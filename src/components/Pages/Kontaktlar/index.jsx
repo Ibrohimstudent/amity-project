@@ -11,7 +11,7 @@ function Contact(props) {
 
     const dispatch =useDispatch()
     function editItem(item) {
-        dispatch({type:"EDIT_DATA", payload: item})
+        dispatch({type:"EDIT_CONTACTDATA", payload: item})
         setOpen(prevState => !prevState)
 
     }

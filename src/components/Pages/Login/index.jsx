@@ -82,8 +82,6 @@ function Login(props) {
                         onChange={(e)=>setPassword(e.target.value)} />
                 </Form.Item>
 
-
-
                 <Form.Item
 
                 >

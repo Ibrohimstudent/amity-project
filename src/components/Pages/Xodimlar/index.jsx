@@ -9,7 +9,7 @@ function Xodimlar(props) {
 
     const dispatch =useDispatch()
     function editItem(item) {
-        dispatch({type:"EDIT_DATA", payload: item})
+        dispatch({type:"EDIT_USERDATA", payload: item})
         setOpen(prevState => !prevState)
 
     }

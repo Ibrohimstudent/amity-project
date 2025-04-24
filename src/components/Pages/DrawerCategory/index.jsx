@@ -27,7 +27,7 @@ const App = ({isModalOpen,setIsModalOpen}) => {
 
     function onFinish(value) {
         if (editData.id){
-            dispatch({type:"EDIT_SAVE",payload:value})
+            dispatch({type:"EDIT_C_SAVE",payload:value})
 
         }
 

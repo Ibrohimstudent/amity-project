@@ -28,10 +28,10 @@ function CategoryReducer(state={
             })
             state = {...state,category: a}
             break
-        case "EDIT_DATA" :
+        case "EDIT_C_DATA" :
             state={...state,editData: action.payload}
             break
-        case "EDIT_SAVE" :
+        case "EDIT_C_SAVE" :
             let b = state.category.map(item=>{
                 let data = state.editData
 

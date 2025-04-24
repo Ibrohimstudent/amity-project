@@ -24,10 +24,10 @@ function XodimlarReducer(state={
             })
             state = {...state,xodimlar: a}
             break
-        case "EDIT_DATA" :
+        case "EDIT_USERDATA" :
             state={...state,editData: action.payload}
             break
-        case "EDIT_SAVE" :
+        case "EDIT_USERSAVE" :
             let b = state.xodimlar.map(item=>{
                 let data = state.editData
 
