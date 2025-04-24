@@ -20,7 +20,7 @@ function Login(props) {
 
     const checkEmail =(e)=>{
         e.preventDefault()
-        if (email === "ibrohimxudoyberdiyev@gmail.com" && password === "2006"){
+        if (email === "ibrohim@gmail.com" && password === "2006"){
             navigate("/kabinet")
 
         }else {
